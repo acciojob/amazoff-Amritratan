@@ -1,14 +1,5 @@
 package com.driver;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
 public class DeliveryPartner {
 
     private String id;
@@ -19,4 +10,15 @@ public class DeliveryPartner {
         this.numberOfOrders = 0;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public Integer getNumberOfOrders(){
+        return numberOfOrders;
+    }
+
+    public void setNumberOfOrders(Integer numberOfOrders) {
+        this.numberOfOrders = numberOfOrders;
+    }
 }
